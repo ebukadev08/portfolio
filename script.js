@@ -34,3 +34,4 @@ function toggleTheme(){
         localStorage.theme = 'light';
     }
 }
+document.getElementById("year").textContent = new Date().getFullYear();
