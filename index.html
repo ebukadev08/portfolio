@@ -37,7 +37,7 @@
         <img src="./images/sun_icon.png" alt="" class="w-6 hidden dark:block">
     </button>
     
-    <a href="contact" class="hidden lg:flex items-center gap-3 px-10 py-2.5 
+    <a href="#contact" class="hidden lg:flex items-center gap-3 px-10 py-2.5 
             border border-gray-400 rounded-full ml-4 font-Ovo dark:border-white/50">
         Contact
         <img src="./images/arrow-icon.png" alt="" class="w-4 dark:hidden">
@@ -69,20 +69,19 @@
     <!-- ----- header ----- -->
 
 <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
-    <img src="./images/user.ebu.jpg" alt="" class="rounded-full w-24">
+    <img src="./images/user.ebu.jpg" alt="Ebuka's Victor Profile Picture" loading="lazy" class="rounded-full w-24 object-cover">
     <h3 class="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo">Hi!, I'm Ebuka Victor  <img src="./images/hand-icon.png" alt="" class="w-6">
     </h3>
     <h1 class="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">Backend developer based in Nigeria, Lagos.</h1>
     <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-4">
-        <!-- Contact Button -->
         <a href="#contact"
            class="px-6 py-3 rounded-full bg-gradient-to-r from-[#b820e8] to-[#da7d20] text-white flex items-center gap-2 transition duration-300 hover:scale-105 dark:border-transparent">
           Contact Me
           <img src="./images/right-arrow-white.png" alt="Right arrow" class="w-4 h-4">
         </a>
       
-        <!-- Resume Button -->
-        <a href="./resume.pdf" download
+
+        <a href="./resume.pdf"
            class="px-6 py-3 rounded-full border border-gray-500 flex items-center gap-2 bg-white dark:text-gray-800 transition duration-300 hover:scale-105">
           My Resume
           <img src="./images/download-icon.png" alt="Download icon" class="w-4 h-4">
@@ -109,7 +108,7 @@
             </div>
         </div>
         <div class="flex-1">
-        <p class="mb-10 max-w-2xl font-Ovo">I am a Backend Developer based in lagos.
+        <p class="mb-10 max-w-2xl font-Ovo">I am a Backend Developer based in Lagos.
             with a strong passion of solving problems through code. I specialize in creating APIs, managing database, and building the backend logic 
             that keeps application running smoothly. In addition to my backend expertise, I've also learned frontend technologies 
             to become a full-stack developer. My goal is to build scalable, end-to-end web application that deliver seemless user experiences.
@@ -182,13 +181,13 @@
 
 <div id="services" class="w-full px-[12%] py-10 scroll-mt-20">
         <h4 class="text-center mb-2 text-lg font-Ovo">What i offer</h4>
-        <h2 class="text-center text-5xl font-Ovo">My services</h2>
+        <h2 class="text-center text-5xl font-Ovo">My services </h2>
         <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">I'm a Backend Developer based in lagos.
             with a strong passion of solving problems through code. I specialize in creating APIs, managing database, and building the backend logic 
             that keeps application running smoothly. In addition to my backend expertise, I've also learned frontend technologies 
             to become a full-stack developer. My goal is to build scalable, end-to-end web application that deliver seemless user experiences.<p>
 
-        <div class="grid grid-cols-auto gap-6 my-10">
+        <div class="grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mx-10">
             <div class="border border-gray-600 rounded-lg px-8 py-12 cursor-pointer 
             hover:-translate-y-1 hover:shadow-black hover:bg-lightHover duration-500
             dark:hover:bg-darkHover dark:hover:shadow-white
@@ -196,7 +195,7 @@
                 <img src="./images/web-icon.png" alt="" class="w-10">
                 <h3 class="text-lg my-4 text-gray-700 dark:text-white">Web Design</h3>
                 <p class="text-sm text-gray-600 leading-5 dark:text-white/80">Web development is the process of building, programming....</p>
-                <a href="" class="flex items-center gap-2 text-sm mt-2">Read more <img src="./images/right-arrow.png" alt="" class="w-4"></a>
+                <a href="#" class="flex items-center gap-2 text-sm mt-2" onclick="event.preventDefault()">Read more <img src="./images/right-arrow.png" alt="" class="w-4"></a>
             </div>
             <div class="border border-gray-600 rounded-lg px-8 py-12 cursor-pointer 
                                 hover:-translate-y-1 hover:shadow-black hover:bg-lightHover duration-500
@@ -205,29 +204,10 @@
                 <img src="./images/mobile-icon.png" alt="" class="w-10">
                 <h3 class="text-lg my-4 text-gray-700 dark:text-white">Mobile app</h3>
                 <p class="text-sm text-gray-600 leading-5 dark:text-white/80">Web development is the process of building, programming....</p>
-                <a href="" class="flex items-center gap-2 text-sm mt-2">Read more <img src="./images/right-arrow.png" alt=""
+                <a href="#" class="flex items-center gap-2 text-sm mt-2" onclick="event.preventDefault()">Read more <img src="./images/right-arrow.png" alt=""
                         class="w-4"></a>
             </div>
-            <div class="border border-gray-600 rounded-lg px-8 py-12 cursor-pointer 
-                                hover:-translate-y-1 hover:shadow-black hover:bg-lightHover duration-500
-                                dark:hover:bg-darkHover dark:hover:shadow-white
-                                ">
-                <img src="./images/ui-icon.png" alt="" class="w-10">
-                <h3 class="text-lg my-4 text-gray-700 dark:text-white">UI/ UX Design</h3>
-                <p class="text-sm text-gray-600 leading-5 dark:text-white/80">Web development is the process of building, programming....</p>
-                <a href="" class="flex items-center gap-2 text-sm mt-2">Read more <img src="./images/right-arrow.png" alt=""
-                        class="w-4"></a>
-            </div>
-            <div class="border border-gray-600 rounded-lg px-8 py-12 cursor-pointer 
-                                hover:-translate-y-1 hover:shadow-black hover:bg-lightHover duration-500
-                                dark:hover:bg-darkHover dark:hover:shadow-white
-                                ">
-                <img src="./images/graphics-icon.png" alt="" class="w-10">
-                <h3 class="text-lg my-4 text-gray-700 dark:text-white">Graphics Design</h3>
-                <p class="text-sm text-gray-600 leading-5 dark:text-white/80">Web development is the process of building, programming....</p>
-                <a href="" class="flex items-center gap-2 text-sm mt-2">Read more <img src="./images/right-arrow.png" alt=""
-                        class="w-4"></a>
-            </div>
+            
         </div>
 
 </div>
@@ -240,15 +220,15 @@
         <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">Welcome to my work development Portfolio! 
             Explore a collection of projects showcasing my expertise in back-end and front-end development </p>
 
-            <div class="grid grid-cols-auto my-10 gap-5 dark:text-black">
-                <div class="aspect-square bg-[url('./images/work-1.png')] 
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 my-10 gap-5 dark:text-black">
+                <div class="aspect-square bg-[url('./images/projectGroceriesStore.png')] 
                 bg-no-repeat bg-cover bg-center relative rounded-lg cursor-pointer group">
 
                 <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 
                 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
                 <div>
-                    <h2 class="font-semibold">Frontend Project</h2>
-                    <p class="text-sm text-gray-700">Web Design</p>
+                    <h2 class="font-semibold">Grocery Store</h2>
+                    <p class="text-sm text-gray-700">Python, Database: MYSQL</p>
                 </div>
                 <div class="border rounded-full border-black w-9 aspect-square 
                 flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
@@ -257,14 +237,29 @@
             </div>
                 </div>
 
-                <div class="aspect-square bg-[url('./images/work-2.png')] 
+                <div class="aspect-square bg-[url('./images/projectExpensesAndIncome.png')] 
                                 bg-no-repeat bg-cover bg-center relative rounded-lg cursor-pointer group">
                 
                     <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 
                                 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
                         <div>
-                            <h2 class="font-semibold">Geo based app</h2>
-                            <p class="text-sm text-gray-700">mobile app</p>
+                            <h2 class="font-semibold">Expenses and Income</h2>
+                            <p class="text-sm text-gray-700">Reactjs, Database: Mongodb</p>
+                        </div>
+                        <div class="border rounded-full border-black w-9 aspect-square 
+                                flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                            <a href=""><img src="./images/send-icon.png" alt="" class="w-5"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" aspect-square bg-[url('./images/projectCryptoCoin.png')] 
+                                bg-no-repeat bg-cover bg-center relative rounded-lg cursor-pointer group">
+                
+                    <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 
+                                -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                        <div>
+                            <h2 class="font-semibold">CoinTrace</h2>
+                            <p class="text-sm text-gray-700">Reactjs, API: CoinGecko</p>
                         </div>
                         <div class="border rounded-full border-black w-9 aspect-square 
                                 flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
@@ -272,43 +267,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="aspect-square bg-[url('./images/work-3.png')] 
-                                bg-no-repeat bg-cover bg-center relative rounded-lg cursor-pointer group">
-                
-                    <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 
-                                -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-                        <div>
-                            <h2 class="font-semibold">photography site</h2>
-                            <p class="text-sm text-gray-700">Web Design</p>
-                        </div>
-                        <div class="border rounded-full border-black w-9 aspect-square 
-                                flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                            <img src="./images/send-icon.png" alt="" class="w-5">
-                        </div>
-                    </div>
-                </div>
-                <div class="aspect-square bg-[url('./images/work-4.png')] 
-                                bg-no-repeat bg-cover bg-center relative rounded-lg cursor-pointer group">
-                
-                    <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 
-                                -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-                        <div>
-                            <h2 class="font-semibold">UI/UX designing</h2>
-                            <p class="text-sm text-gray-700">UI/UX Design</p>
-                        </div>
-                        <div class="border rounded-full border-black w-9 aspect-square 
-                                flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                            <img src="./images/send-icon.png" alt="" class="w-5">
-                        </div>
-                    </div>
-                </div>
-
             </div>
-            <a href="#" class="w-max flex text-center justify-center gap-2 text-gray-700 border-[0.5px] 
+            <a href="project.html" class="w-max flex text-center justify-center gap-2 text-gray-700 border-[0.5px] 
             border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500 
             dark:text-white dark:border-white dark:hover:bg-darkHover
             ">
-            Show more 
+            Show projects 
             <img src="./images/right-arrow-bold.png" alt="" class="w-4 h-4 dark:hidden mt-2">
             <img src="./images/right-arrow-bold-dark.png" alt="" class="w-4 h-4 hidden mt-2 dark:block">
         </a>
@@ -317,7 +281,7 @@
 
     <!-- ----- contact ----- -->
 
-    <div id="contact" class="w-full py-[12%] px-10 scroll-mt-20 bg-[url('./images/footer-bg-color.png')] 
+    <div id="contact" class="w-full py-[12%] px-10 -scroll-mt-20 bg-[url('./images/footer-bg-color.png')] 
     bg-no-repeat bg-[lenght:90%_auto] bg-center dark:bg-none">
         <h4 class="text-center mb-2 text-lg font-Ovo">Connect with me</h4>
         <h2 class="text-center text-5xl font-Ovo">Get in touch</h2>
