@@ -1,6 +1,22 @@
 const sideMenu = document.querySelector('#sideMenu');
 const navBar = document.querySelector("nav");
 const navLinks = document.querySelector("nav ul") ;
+const backToTopBtn = document.getElementById('backToTopBtn');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backToTopBtn.classList.remove('hidden');
+    } else {
+      backToTopBtn.classList.add('hidden');
+    }
+  });
+
+  backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
 
 function openMenu(){
     sideMenu.style.transform = 'translateX(-16rem)';
@@ -19,8 +35,14 @@ window.addEventListener('scroll', ()=>{
         navLinks.classList.add('bg-white', 'bg-opacity-50', 'shadow-sm', 'dark:border', 'darka:border-white/50', 'dark:bg-transparent')
     }
 })
-
-// -------- light mode and dark mode --------
+new TypeIt("#typeit-intro", {
+    strings: 'Hi! I\'m Ebuka Victor <img src="./images/hand-icon.png" alt="👋" style="width: 24px; vertical-align: middle;" />',
+    speed: 100,
+    waitUntilVisible: true,
+    html: true,
+    cursor: false,
+  })
+  .go();
 
 document.documentElement.classList.toggle(
     'dark',
@@ -34,4 +56,5 @@ function toggleTheme(){
         localStorage.theme = 'light';
     }
 }
+
 document.getElementById("year").textContent = new Date().getFullYear();

@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ebuka Victor - Backend Developer Portfolio">
+    <meta property="og:title" content="Ebuka Victor | Backend Developer" />
     <title>Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="tailwind.config.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typeit@8.7.1/dist/index.umd.js"></script>
 </head>
+<button id="backToTopBtn" class="hidden fixed bottom-6 right-6 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition duration-300 z-50">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+  </svg>
+</button>
 <body class="overflow-x-hidden font-outfit leading-8 dark:bg-darkTheme dark:text-white">
 
     <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden">
@@ -17,7 +25,11 @@
     </div>
     <nav class="w-full px-5 lg:px-8 xl:px-[8%] py-4 flex fixed items-center justify-between z-50">
 
-        <h1 class="text-5xl font-Ovo">Ebuka.</h1>
+        <img src="./images/logo_dark.png" alt="logo"
+        class="w-28 cursor-pointer mr-14 dark:hidden">
+
+        <img src="./images/logo_white.png" alt="logo" 
+        class="w-28 cursor-pointer mr-14 hidden dark:block">
 
         <ul class="hidden md:flex items-center gap-6 lg:gap-8 
         rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo
@@ -51,7 +63,7 @@
 
         <!-- ----- mobile menu ----- -->
         <ul id="sideMenu" class="flex md:hidden flex-col py-20 px-10 fixed 
-        -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-50 gap-4 font-Ovo dark:bg-[#280048] dark:text-white">
+        -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 gap-4 font-Ovo dark:bg-[#280048] dark:text-white">
 
         <div class="absolute right-6 top-6" onclick="closeMenu()">
             <img src="./images/close-black.png" alt="" class="w-5 cursor-pointer dark:hidden">
@@ -69,10 +81,9 @@
     <!-- ----- header ----- -->
 
 <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
-    <img src="./images/user.ebu.jpg" alt="Ebuka's Victor Profile Picture" loading="lazy" class="rounded-full w-24 object-cover">
-    <h3 class="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo">Hi!, I'm Ebuka Victor  <img src="./images/hand-icon.png" alt="" class="w-6">
-    </h3>
-    <h1 class="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">Backend developer based in Nigeria, Lagos.</h1>
+    <img src="./images/user.ebu_1.png" alt="Ebuka's Victor Profile Picture" loading="lazy" class="rounded-full w-32 object-cover">
+    <h3 id="typeit-intro" class="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo"></h3>
+    <h1 class="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">Backend developer based in Lagos, Nigeria.</h1>
     <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-4">
         <a href="#contact"
            class="px-6 py-3 rounded-full bg-gradient-to-r from-[#b820e8] to-[#da7d20] text-white flex items-center gap-2 transition duration-300 hover:scale-105 dark:border-transparent">
@@ -97,7 +108,7 @@
 
     <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
         <div class="max-w-max mx-auto relative">
-            <img src="./images/user.ebu.jpg" alt="" class="w-64 sm:w-80 rounded-3xl max-w-none">
+            <img src="./images/user.ebu.png" alt="" class="w-64 sm:w-80 rounded-3xl max-w-none">
 
             <div class="bg-white w-1/2 aspect-square absolute right-0 bottom-0 
             rounded-full translate-x-1/4 translate-y-1/3 shadow-[0_4px_55px_rgba(149,0,162,0.15)]
@@ -187,7 +198,7 @@
             that keeps application running smoothly. In addition to my backend expertise, I've also learned frontend technologies 
             to become a full-stack developer. My goal is to build scalable, end-to-end web application that deliver seamless user experiences.<p>
 
-        <div class="grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mx-10">
+        <div class="flex justify-center max-w-2xl mx-auto">
             <div class="border border-gray-600 rounded-lg px-8 py-12 cursor-pointer 
             hover:-translate-y-1 hover:shadow-black hover:bg-lightHover duration-500
             dark:hover:bg-darkHover dark:hover:shadow-white
@@ -210,13 +221,13 @@
 
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 my-10 gap-5 dark:text-black">
                 <div class="aspect-square bg-[url('./images/projectGroceriesStore.png')] 
-                bg-no-repeat bg-cover bg-center relative rounded-lg cursor-pointer group">
+                bg-no-repeat bg-cover bg-center relative rounded-lg cursor-pointer group project-card" data-tags="python javascript">
 
                 <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 
                 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
                 <div>
                     <h2 class="font-semibold">Grocery Store</h2>
-                    <p class="text-sm text-gray-700">Python, Database: MYSQL</p>
+                    <p class="text-sm text-gray-700">HTML, CSS, JavaScript, Python, Database: MYSQL</p>
                 </div>
                 <div class="border rounded-full border-black w-9 aspect-square 
                 flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
@@ -226,13 +237,13 @@
                 </div>
 
                 <div class="aspect-square bg-[url('./images/projectExpensesAndIncome.png')] 
-                                bg-no-repeat bg-cover bg-center relative rounded-lg cursor-pointer group">
+                                bg-no-repeat bg-cover bg-center relative rounded-lg cursor-pointer group project-card" data-tags="Javascript">
                 
                     <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 
                                 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
                         <div>
                             <h2 class="font-semibold">Expenses and Income</h2>
-                            <p class="text-sm text-gray-700">Reactjs, Database: Mongodb</p>
+                            <p class="text-sm text-gray-700">HTML, JavaScript, Database: Mongodb</p>
                         </div>
                         <div class="border rounded-full border-black w-9 aspect-square 
                                 flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
@@ -241,17 +252,17 @@
                     </div>
                 </div>
                 <div class=" aspect-square bg-[url('./images/projectCryptoCoin.png')] 
-                                bg-no-repeat bg-cover bg-center relative rounded-lg cursor-pointer group">
+                                bg-no-repeat bg-cover bg-center relative rounded-lg cursor-pointer group project-card" data-tags="Javascript">
                 
                     <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 
                                 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
                         <div>
                             <h2 class="font-semibold">CoinTrace</h2>
-                            <p class="text-sm text-gray-700">Reactjs, API: CoinGecko</p>
+                            <p class="text-sm text-gray-700">HTML, CSS, JavaScript, API: CoinGecko</p>
                         </div>
                         <div class="border rounded-full border-black w-9 aspect-square 
                                 flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                            <a href="https://github.com/ebukadev08/Cryptoplace"><img src="./images/send-icon.png" alt="" class="w-5"></a>
+                            <a href=""></a><img src="./images/send-icon.png" alt="" class="w-5">
                         </div>
                     </div>
                 </div>
