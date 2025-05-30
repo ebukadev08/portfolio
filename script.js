@@ -4,7 +4,7 @@ const navLinks = document.querySelector("nav ul") ;
 const backToTopBtn = document.getElementById('backToTopBtn');
 
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
+    if (window.scrollY > 500) {
       backToTopBtn.classList.remove('hidden');
     } else {
       backToTopBtn.classList.add('hidden');
