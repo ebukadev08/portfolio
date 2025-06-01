@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
 </head>
+  
 <button id="backToTopBtn" class="hidden fixed bottom-6 right-6 backdrop-blur-md bg-white/30 border border-white/20 text-blue-600 p-3 rounded-full shadow-xl hover:bg-white/40 transition duration-300 z-50">
   <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
@@ -22,7 +23,7 @@
     </div>
 <nav class="backdrop-blur-none w-full px-5 lg:px-8 xl:px-[8%] py-4 flex fixed items-center justify-between z-50">
 
-        <a href="#top"><h1 class="text-5xl font-Ovo">My Projects.</h1></a>
+        <a href="#top"><h1 class="font-Ovo text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold">My Projects.</h1></a>
 
         <ul class="hidden md:flex items-center gap-6 lg:gap-8 
         rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo
@@ -56,7 +57,7 @@
 
         <!-- ----- mobile menu ----- -->
         <ul id="sideMenu" class="flex md:hidden flex-col py-20 px-10 fixed 
-        -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-50 gap-4 font-Ovo dark:bg-[#280048] dark:text-white">
+        -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 gap-4 font-Ovo dark:bg-[#280048] dark:text-white">
 
         <div class="absolute right-6 top-6" onclick="closeMenu()">
             <img src="./images/close-black.png" alt="" class="w-5 cursor-pointer dark:hidden">
@@ -81,9 +82,11 @@
                 <div>
                     <h2 class="font-semibold">TinDog</h2>
                     <p class="text-sm text-gray-700">HTML, CSS</p>
+                    <p class="text-sm text-gray-700">A landing page for dogs. Responsive and mobile-friendly.</p></p>
                 </div>
-                <div class="border rounded-full border-black w-9 aspect-square 
-                flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                <div class="border rounded-full border-black w-8 h-8 aspect-square 
+                            flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 
+                            transition duration-700 group-hover:rotate-12">
                     <a href="https://ebukadev08.github.io/TinDog/"><img src="./images/send-icon.png" alt="" class="w-5"></a>
                 </div>
             </div>
@@ -97,9 +100,12 @@
                         <div>
                             <h2 class="font-semibold">Calculator</h2>
                             <p class="text-sm text-gray-700">HTML, CSS</p>
+                            <p class="text-sm text-gray-700">A basic calculator for performing arithmetic operations like addition, 
+                            subtraction, multiplication, and division.</p>
                         </div>
-                        <div class="border rounded-full border-black w-9 aspect-square 
-                                flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                        <div class="border rounded-full border-black w-8 h-8 aspect-square 
+                            flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 
+                            transition duration-700 group-hover:rotate-12">
                             <a href="https://ebukadev08.github.io/mycalculator/"><img src="./images/send-icon.png" alt="" class="w-5"></a>
                         </div>
                     </div>
@@ -112,9 +118,11 @@
                         <div>
                             <h2 class="font-semibold">Delivery App</h2>
                             <p class="text-sm text-gray-700">HTML, CSS</p>
+                            <p class="text-sm text-gray-700">A responsive landing page for a delivery service with service</p>
                         </div>
-                        <div class="border rounded-full border-black w-9 aspect-square 
-                                flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                        <div class="border rounded-full border-black w-8 h-8 aspect-square 
+                            flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 
+                            transition duration-700 group-hover:rotate-12">
                             <a href="https://ebukadev08.github.io/delivery/"><img src="./images/send-icon.png" alt="" class="w-5"></a>
                         </div>
                     </div>
@@ -127,9 +135,11 @@
                         <div>
                             <h2 class="font-semibold">Dice Game</h2>
                             <p class="text-sm text-gray-700">HTML, CSS, Javascript</p>
+                            <p class="text-sm text-gray-700"></p>
                         </div>
-                        <div class="border rounded-full border-black w-9 aspect-square 
-                                flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                        <div class="border rounded-full border-black w-8 h-8 aspect-square 
+                            flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 
+                            transition duration-700 group-hover:rotate-12">
                             <a href="https://ebukadev08.github.io/dicee-game/"><img src="./images/send-icon.png" alt="" class="w-5"></a>
                         </div>
                     </div>
@@ -143,8 +153,9 @@
                             <h2 class="font-semibold">Note App</h2>
                             <p class="text-sm text-gray-700">HTML, Javascript, Python</p>
                         </div>
-                        <div class="border rounded-full border-black w-9 aspect-square 
-                                flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                        <div class="border rounded-full border-black w-8 h-8 aspect-square 
+                            flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 
+                            transition duration-700 group-hover:rotate-12">
                             <a href="https://github.com/ebukadev08/notes"><img src="./images/send-icon.png" alt="" class="w-5"></a>
                         </div>
                     </div>
@@ -158,8 +169,9 @@
                             <h2 class="font-semibold">Weather App</h2>
                             <p class="text-sm text-gray-700">Nodejs, API: Open Weather</p>
                         </div>
-                        <div class="border rounded-full border-black w-9 aspect-square 
-                                flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                        <div class="border rounded-full border-black w-8 h-8 aspect-square 
+                            flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 
+                            transition duration-700 group-hover:rotate-12">
                             <a href="https://github.com/ebukadev08/WeatherApp"><img src="./images/send-icon.png" alt="" class="w-5"></a>
                         </div>
                     </div>
@@ -170,11 +182,14 @@
                     <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 
                                 -translate-x-1/2 py-3 px-3 flex items-center justify-between duration-500 group-hover:bottom-7">
                         <div>
+                            <h1 class="font-semibold">Backend Project</h1>
                             <h2 class="font-semibold">Grocery Store</h2>
                             <p class="text-sm text-gray-700">HTML, CSS, JavaScript, Python, Database: MYSQL</p>
+                            <p class="text-sm text-gray-700"> A store management app where customers can enter their name and place orders.</p>
                         </div>
-                        <div class="border rounded-full border-black w-9 aspect-square 
-                                flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                        <div class="border rounded-full border-black w-8 h-8 aspect-square 
+                            flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 
+                            transition duration-700 group-hover:rotate-12">
                             <a href="https://github.com/ebukadev08/grocery_store"><img src="./images/send-icon.png" alt="" class="w-5"></a>
                         </div>
                     </div>
@@ -185,11 +200,14 @@
                     <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 
                                 -translate-x-1/2 py-3 px-3 flex items-center justify-between duration-500 group-hover:bottom-7">
                         <div>
+                            <h1 class="font-semibold">Backend and Frontend Project</h1>
                             <h2 class="font-semibold">Expenses and Income</h2>
                             <p class="text-sm text-gray-700">HTML, JavaScript, Database: Mongodb</p>
+                            <p class="text-sm text-gray-700">Track and manage your income and expenses with clear insights into your budget.</p>
                         </div>
-                        <div class="border rounded-full border-black w-9 aspect-square 
-                                flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                        <div class="border rounded-full border-black w-8 h-8 aspect-square 
+                            flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 
+                            transition duration-700 group-hover:rotate-12">
                             <a href="https://github.com/ebukadev08/expenses-and-income"><img src="./images/send-icon.png" alt="" class="w-5"></a>
                         </div>
                     </div>
@@ -200,11 +218,14 @@
                     <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 
                                 -translate-x-1/2 py-3 px-3 flex items-center justify-between duration-500 group-hover:bottom-7">
                         <div>
+                            <h1 class="font-semibold">Backend and Frontend Project </h1>
                             <h2 class="font-semibold">CoinTrace</h2>
                             <p class="text-sm text-gray-700">HTML, CSS, JavaScript, API: CoinGecko</p>
+                            <p class="text-sm text-gray-700">A simple crypto tracker that fetches real-time data using the CoinGecko API.</p>
                         </div>
-                        <div class="border rounded-full border-black w-9 aspect-square 
-                                flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                        <div class="border rounded-full border-black w-8 h-8 aspect-square 
+                            flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 
+                            transition duration-700 group-hover:rotate-12">
                             <a href="https://github.com/ebukadev08/Cryptoplace"><img src="./images/send-icon.png" alt="" class="w-5"></a>
                         </div>
                     </div>
@@ -219,8 +240,9 @@
                             <p class="text-sm text-gray-700">Python</p>
                         </div>
                         <a href="https://github.com/ebukadev08/Personal_Finance_Tractor">
-                        <div class="border rounded-full border-black w-9 aspect-square 
-                                flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                        <div class="border rounded-full border-black w-8 h-8 aspect-square 
+                            flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 
+                            transition duration-700 group-hover:rotate-12">
                             <img src="./images/send-icon.png" alt="" class="w-5"></a>
                         </div>
                     </div>
