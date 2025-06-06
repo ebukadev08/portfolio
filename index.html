@@ -16,6 +16,9 @@
     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
   </svg>
 </button>
+<div id="toast" class="fixed top-6 right-6 z-50 hidden p-1 my-20 rounded-lg shadow-lg text-white bg-green-600 transition-all duration-500">
+    Message sent successfully!
+</div>
 <body class="overflow-x-hidden font-outfit leading-8 dark:bg-darkTheme dark:text-white transition-all duration-500 ease-in-out">
 
 <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden">
@@ -204,6 +207,7 @@
                 <h3 class="text-lg my-4 text-gray-700 dark:text-white">Web Design</h3>
                 <p class="text-sm text-gray-600 leading-5 dark:text-white/80">Web development is the process of building, programming....</p>
             </div>
+            
         </div>
 
 </div>
@@ -292,7 +296,7 @@
     bg-no-repeat bg-[lenght:90%_auto] bg-center dark:bg-none">
         <h4 class="text-center mb-2 text-lg font-Ovo">Connect with me</h4>
         <h2 class="text-center text-5xl font-Ovo">Get in touch</h2>
-        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">I'w love to hear from you! 
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">I'd love to hear from you! 
             If you have any questions, comments or feedback, please use the form below </p>
 
             <form method="POST" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto">
@@ -300,7 +304,7 @@
                 <input type="hidden" name="access_key" value="80a1a74f-5fea-453b-abfb-39dd846a9a4b">
 
 
-                <div class="grid grid-cols-auto gap-6 mt-10 mb-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10 mb-8">
                     <input type="text" placeholder="Enter your name" class="flex-1 p-3 outline-none border-[0.5px] 
                     border-gray-400 rounded-md bg-white  dark:bg-darkHover/30 dark:border-white/90" required name="name">
                     <input type="email" placeholder="Enter your email" class="flex-1 p-3 outline-none border-[0.5px] 
@@ -314,6 +318,7 @@
 
                 </button>
             </form>
+            <div id="form-status" class="text-center mt-4 text-lg font-semibold"></div>
     </div>
 
     <!-- ----- footer ----- -->
@@ -331,7 +336,7 @@
         mx-[10%] mt-12 py-6">
         <p>© <span id="year"></span> Ebuka Victor. All rights reserved.</p>
             <ul class="flex items-center justify-center gap-10 mt-4 sm:mt-0">
-                <li><a href="https://github.com/ebukadev08?tab=repositories">GitHub</a></li>
+                <li><a href="#">GitHub</a></li>
                 <li><a href="#">LinkedIn</a></li>
                 <li><a href="#">Twitter</a></li>
             </ul>

@@ -1,6 +1,42 @@
 const sideMenu = document.querySelector('#sideMenu');
 const navBar = document.querySelector("nav");
 const backToTopBtn = document.getElementById('backToTopBtn');
+const form = document.querySelector('form');
+const toast = document.getElementById('toast');
+
+form.addEventListener('submit', async function (e) {
+  e.preventDefault();
+
+  const formData = new FormData(form)
+  const response = await fetch(form.action, {
+    method: form.method,
+    body: formData,
+    headers: {
+      'Accept': 'application/json'
+    }
+  })
+
+  if (response.ok){
+      showToast('Message sent successfully', true);
+      form.reset()
+  }else {
+    showToast('Oops!, Something went wrong', false)
+  }
+})
+
+  function showToast(message, success = true ){
+    toast.textContent = message;
+    toast.classList.remove('hidden');
+    toast.classList.remove('bg-green-600', 'bg-red-600');
+    toast.classList.add(success ? 'bg-green-600' : 'bg-red-600');
+
+    setTimeout(() => {
+      toast.classList.add('hidden')
+      
+    }, 4000);
+  }
+
+
 
   window.addEventListener('scroll', () => {
     if (window.scrollY > 500) {
@@ -70,3 +106,4 @@ function toggleTheme(){
 }
 
 document.getElementById("year").textContent = new Date().getFullYear();
+
