@@ -1,38 +1,41 @@
 const sideMenu = document.querySelector('#sideMenu');
 const navBar = document.querySelector("nav");
 const backToTopBtn = document.getElementById('backToTopBtn');
-const form = document.querySelector('form');
-const toast = document.getElementById('toast');
+ const form = document.getElementById('contact-form');
+  const toast = document.getElementById('toast');
 
-form.addEventListener('submit', async function (e) {
-  e.preventDefault();
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
 
-  const formData = new FormData(form)
-  const response = await fetch(form.action, {
-    method: form.method,
-    body: formData,
-    headers: {
-      'Accept': 'application/json'
+    const formData = new FormData(form);
+    formData.append('access_key', '80a1a74f-5fea-453b-abfb-39dd846a9a4b');
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+        headers: { Accept: "application/json" },
+      });
+
+      if (response.ok) {
+        showToast("Message sent successfully!", true);
+        form.reset();
+      } else {
+        showToast("Oops! Something went wrong.", false);
+      }
+    } catch (error) {
+      showToast("Network error. Please try again.", false);
     }
-  })
+  });
 
-  if (response.ok){
-      showToast('Message sent successfully', true);
-      form.reset()
-  }else {
-    showToast('Oops!, Something went wrong', false)
-  }
-})
-
-  function showToast(message, success = true ){
+  function showToast(message, success = true) {
     toast.textContent = message;
-    toast.classList.remove('hidden');
-    toast.classList.remove('bg-green-600', 'bg-red-600');
-    toast.classList.add(success ? 'bg-green-600' : 'bg-red-600');
+    toast.classList.remove("hidden");
+    toast.classList.remove("bg-green-600", "bg-red-600");
+    toast.classList.add(success ? "bg-green-600" : "bg-red-600");
 
     setTimeout(() => {
-      toast.classList.add('hidden')
-      
+      toast.classList.add("hidden");
     }, 4000);
   }
 
