@@ -1,8 +1,9 @@
 const sideMenu = document.querySelector('#sideMenu');
 const navBar = document.querySelector("nav");
 const backToTopBtn = document.getElementById('backToTopBtn');
- const form = document.getElementById('contact-form');
-  const toast = document.getElementById('toast');
+
+const form = document.getElementById('contact-form');
+const toast = document.getElementById('toast');
 
   form.addEventListener('submit', async function (e) {
     e.preventDefault();
